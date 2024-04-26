@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会议数据页</title>
+    <link rel="stylesheet" href="../style/data.css">
+</head>
+
+<body>
+    <div class="header">会议数据
+        <button class="backbtn">&lt;返回主页</button>
+        <button class="updatebtn hide">更改数据</button>
+        <button class="savebtn hide">保存</button>
+        <button class="cancelbtn hide">取消</button>
+    </div>
+    <div class="mtinfoholder">
+        <form class="mtinfoform">
+            <table class="mtinfo">
+                <tr>
+                    <td>会议名称</td>
+                    <td>
+                        <input name="meeting_name" class="infoinput mtname" readonly="readonly" autocomplete="off"
+                            maxlength="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>会议时长</td>
+                    <td>
+                        <input type="number" name="total_time" class="infoinput mttime" readonly="readonly"
+                            autocomplete="off" oninput="if(this.value.length>5) this.value=this.value.slice(0,5)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>计划人数</td>
+                    <td>
+                        <input type="number" name="expect_in" class="infoinput mtepin" readonly="readonly"
+                            autocomplete="off" oninput="if(this.value.length>5) this.value=this.value.slice(0,5)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>出勤人数</td>
+                    <td>
+                        <input type="number" name="total_in" class="infoinput" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td>缺勤人数</td>
+                    <td>
+                        <input type="number" name="total_out" class="infoinput" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="gendercount">
+                            <div class="male"></div>
+                            <div class="female"></div>
+                            <div class="Minfo">
+                                <div class="Mcolor"></div>
+                                <span class="Mtext"></span>
+                            </div>
+                            <div class="Finfo">
+                                <div class="Fcolor"></div>
+                                <span class="Ftext"></span>
+                            </div>
+                            <span class="gendertip">*出勤男女比例</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="updateinfo"></div>
+                    </td>
+                </tr>
+            </table>
+            <div class="select">&nbsp;
+                <select name="sel_age">
+                    <option value=0>所有级</option>
+                    <option value=23>23级</option>
+                    <option value=22>22级</option>
+                    <option value=21>21级</option>
+                    <option value=20>20级</option>
+                </select>
+                <select name="sel_group">
+                    <option value=0>所有组</option>
+                    <option value=1>前端组</option>
+                    <option value=2>后台组</option>
+                    <option value=3>嵌入式</option>
+                    <option value=4>移动组</option>
+                    <option value=5> AI 组</option>
+                    <option value=6>图形组</option>
+                    <option value=7>设计组</option>
+                </select>
+                <select name="sel_time">
+                    <option value=-1>所有时长</option>
+                    <option value=0>缺勤</option>
+                    <option value=1>0-9min</option>
+                    <option value=2>10-29min</option>
+                    <option value=3>30-49min</option>
+                    <option value=4>50+min</option>
+                </select>
+                <button class="seled">确定</button>
+            </div>
+            <div class="timecolor">&nbsp;&nbsp;&nbsp;
+                <div class="Tcolor c0"></div><span class="Ttext"> 缺勤</span>&nbsp;&nbsp;
+                <div class="Tcolor c1"></div><span class="Ttext"> 0-9min</span>&nbsp;&nbsp;
+                <div class="Tcolor c2"></div><span class="Ttext"> 10-29min</span>&nbsp;&nbsp;
+                <div class="Tcolor c3"></div><span class="Ttext"> 30-49min</span>&nbsp;&nbsp;
+                <div class="Tcolor c4"></div><span class="Ttext"> 50+min</span>
+            </div>
+            <div class="userlist"></div>
+        </form>
+    </div>
+    <script src="../js/data.js"></script>
+</body>
+
+</html>

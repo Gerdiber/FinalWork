@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    min-width: 600px;
+}
+
+.header {
+    position: relative;
+    color: white;
+    font: normal 700 40px/50px 'Microsoft Yahei';
+    text-align: center;
+    background-color: aqua;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.backbtn {
+    position: absolute;
+    top: 5px;
+    left: 10%;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    border: 2px solid snow;
+    border-radius: 10px;
+    color: white;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.updatebtn {
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border: 2px solid #0140c7;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #1880ff;
+    cursor: pointer;
+}
+
+.cancelbtn {
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border: 2px solid gray;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    background-color: #d4d4d4;
+    cursor: pointer;
+}
+
+.savebtn {
+    position: absolute;
+    top: 10px;
+    right: calc(10% + 50px);
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border: 2px solid #0140c7;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #1880ff;
+    cursor: pointer;
+}
+
+.backbtn:hover {
+    box-shadow: 0 0 5px 1px white;
+    font-weight: 700;
+}
+
+.mtinfo {
+    margin: 0 auto;
+    border: 2px solid lightblue;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+td {
+    text-align: center;
+    border: 2px solid lightblue;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.updateinfo {
+    width: 480px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.infoinput {
+    outline: none;
+    height: 30px;
+    width: 350px;
+    box-sizing: border-box;
+    border: 1px none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.editable {
+    border-bottom: 1.5px solid black;
+}
+
+.gendercount {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    border: none;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    font: normal 400 12px/20px 'Microsoft Yahei'
+}
+
+.male {
+    height: 20px;
+    width: 0%;
+    background-color: #00c8ff;
+    margin: 10px 0;
+}
+
+.female {
+    height: 20px;
+    width: 0%;
+    background-color: pink;
+}
+
+.Minfo {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    height: 20px;
+    width: 120px;
+}
+
+.Mcolor {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: #00c8ff;
+}
+
+.Finfo {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    height: 20px;
+    width: 120px;
+}
+
+.Fcolor {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: pink;
+}
+
+.gendertip {
+    position: absolute;
+    color: gray;
+    font-size: 10px;
+    top: 64px;
+    left: 5px;
+}
+
+.select {
+    position: relative;
+    width: 500px;
+    height: 30px;
+    margin: 10px auto 0;
+    box-sizing: border-box;
+    border: 2px solid skyblue;
+    border-bottom: none;
+}
+
+.seled {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    height: 30px;
+    width: 120px;
+    background-color: #0077ff;
+    color: white;
+    border: 2px solid blue;
+    box-sizing: border-box;
+}
+
+.seled:hover {
+    font-weight: 700;
+    box-shadow: 0 0 5px 1px #0077ff;
+}
+
+.userlist {
+    width: 500px;
+    margin: 0 auto 50px;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 2px solid skyblue;
+}
+
+.userbar {
+    position: relative;
+    height: 30px;
+    margin: 5px 0;
+    border: 1px solid black;
+}
+
+.c0 {
+    background-color: gray;
+}
+
+.c1 {
+    background-color: #e04040;
+}
+
+.c2 {
+    background-color: #e0c738;
+}
+
+.c3 {
+    background-color: #53da38;
+}
+
+.c4 {
+    background-color: skyblue;
+}
+
+.timecolor {
+    width: 500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 2px solid skyblue;
+    border-bottom: none;
+}
+
+.Tcolor {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
+.username {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    height: 20px;
+    max-width: 220px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: white;
+}
+
+.usertime {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    width: 70px;
+    height: 20px;
+    outline: none;
+    text-align: center;
+}
+
+.inbtn,
+.outbtn {
+    position: absolute;
+    top: 5px;
+    height: 20px;
+    width: 40px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+.inbtn {
+    right: 90px;
+    background-color: #00bbff;
+    border-color: #0080aa;
+}
+
+.outbtn {
+    right: 130px;
+    background-color: red;
+    border-color: #b30000;
+}
+
+.btn_yes {
+    pointer-events: none;
+}
+
+.btn_no {
+    background-color: #a9a9a9;
+    border-color: gray;
+    color: black;
+}
+
+.hide {
+    visibility: hidden;
+}

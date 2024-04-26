@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    min-width: 600px;
+}
+
+.header {
+    position: relative;
+    color: white;
+    font: normal 700 40px/50px 'Microsoft Yahei';
+    text-align: center;
+    background-color: aqua;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.loginbtn,
+.userbtn {
+    position: absolute;
+    left: 15%;
+    top: 7px;
+    display: inline-block;
+    height: 36px;
+    width: 100px;
+    padding: 4px;
+    box-sizing: border-box;
+    color: white;
+    font: normal 12px 'Microsoft Yahei';
+    background-color: #0077ff;
+    border: 2px solid #0338bd;
+    border-radius: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.meetingarea {
+    width: 70%;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    font: normal 12px 'Microsoft Yahei';
+    background-color: #e6e3e3;
+    border: 1px solid #8c8a8a;
+    border-radius: 10px;
+}
+
+.addmtbtn {
+    position: absolute;
+    top: 64px;
+    left: calc(15% - 30px);
+    height: 30px;
+    width: 30px;
+    background-color: skyblue;
+    box-sizing: border-box;
+    border: 2px solid #0280b2;
+    color: white;
+    font: normal 700 25px/25px 'Microsoft Yahei';
+    cursor: pointer;
+}
+
+.addmtbtn:hover {
+    box-shadow: 0 0 5px 1px skyblue;
+}
+
+.mtholder {
+    position: relative;
+}
+
+.meeting_a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 3px 0;
+    cursor: pointer;
+}
+
+.meeting_a:hover {
+    box-shadow: 0 0 5px 1px gray;
+}
+
+.meeting_b {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 30px);
+    height: 30px;
+    margin: 3px 0;
+    cursor: pointer;
+}
+
+.meeting_b:hover {
+    box-shadow: 0 0 5px 1px gray;
+}
+
+.mtname {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 100%;
+    max-width: 30%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.delmtbtn {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    box-sizing: border-box;
+    border: 2px solid #bf0000;
+    background-color: red;
+    cursor: pointer;
+}
+
+.delmtbtn:hover {
+    box-shadow: 0 0 5px 1px red;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户数据页</title>
+    <link rel="stylesheet" href="../style/user.css">
+</head>
+
+<body>
+    <div class="header">我的信息</div>
+    <div class="infopage">
+        <form class="infoform">
+            <table class="infotable">
+                <tr>
+                    <td>用户名:</td>
+                    <td><input class="u" type="text" name="username" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td>密码:</td>
+                    <td><input class="p" type="text" name="password" autocomplete="off" maxlength="16"
+                            readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td>昵称:</td>
+                    <td><input class="n" type="text" name="name" autocomplete="off" maxlength="10" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td>性别:</td>
+                    <td><input class="ge" type="text" name="gender" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td>级别:</td>
+                    <td><input class="a" type="text" name="age" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td>组别:</td>
+                    <td><input class="gr" type="text" name="group" readonly="readonly"></td>
+                </tr>
+            </table>
+            <div class="warn1"></div>
+            <button class="updatebtn">更 改 信 息</button>
+            <button class="exitbtn">退 出 登 录</button>
+            <button class="savebtn hide">保 存</button>
+            <button class="cancelbtn hide">取 消</button>
+            <button class="backbtn">返 回 主 页</button>
+        </form>
+    </div>
+    <script src="../js/user.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/login.css">
+    <title>登录页</title>
+</head>
+
+<body>
+    <div class="header">
+        登录至QG会议系统
+        <span></span>
+    </div>
+    <div class="pageholder">
+
+        <div class="login page">
+            <h1 class="title"
+                style="text-align: center;padding: 20px 0;color: blueviolet;text-shadow: 2px 2px 5px blue;">
+                登录QGStudio
+            </h1>
+            <button class="turnToR Tbtn">没有账号?立即注册></button>
+            <form class="logindata">
+                <input type="text" name="username" placeholder="请输入用户名" class="u" maxlength="10"><br>
+                <input type="password" name="password" placeholder="请输入密码" class="p" maxlength="16">
+                <div class="warning">
+                    <span class="lwarn hide"></span>
+                </div>
+                <button type="submit" class="loginbtn">登录</button>
+            </form>
+        </div>
+
+        <div class="register page phide">
+            <h1 class="title" style="text-align: center;padding: 20px 0;color: #47cbff;">
+                注册新账号
+            </h1>
+            <button class="turnToL Tbtn">已有账号,返回登录></button>
+            <form class="registerdata">
+                <input type="text" name="username" placeholder="请输入用户名" class="u" maxlength="10"><br>
+                <input type="password" name="password" placeholder="请输入密码" class="p" maxlength="16"><br>
+                <input type="text" name="name" placeholder="请输入昵称" class="n" maxlength="10">
+                <div class="selectarea">
+                    性别: <label for="male">男</label><input type="radio" id="male" name="gender" value=1 checked>
+                    <label for="female">女</label><input type="radio" id="female" name="gender" value=0><br>
+                    <select name="age">
+                        <option value=23 selected="selected">23级</option>
+                        <option value=22>22级</option>
+                        <option value=21>21级</option>
+                        <option value=20>20级</option>
+                    </select>
+                    <select name="group">
+                        <option value=1 selected="selected">前端</option>
+                        <option value=2>后台</option>
+                        <option value=3>嵌入式</option>
+                        <option value=4>移动</option>
+                        <option value=5>人工智能</option>
+                        <option value=6>图形</option>
+                        <option value=7>设计</option>
+                    </select>
+                </div>
+                <div class="tips">*红框部分后续不可修改,请谨慎填写或选择*</div>
+                <div class="warning">
+                    <span class="rwarn hide"></span>
+                </div>
+                <button type="submit" class="registerbtn">注册</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
